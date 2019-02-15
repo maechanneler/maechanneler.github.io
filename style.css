@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+/* フォントの指定 */
+@font-face{
+    font-family: sans-serif; 
+}
