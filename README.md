@@ -1,4 +1,4 @@
-# maechanneler.github.io
+# maechanneler's Lab
 GitHubの練習もかねて、GitHub上にホームページを作ることにしました。主には、CSSとJavaScriptの練習のため。
 
 ## サイトマップ
