@@ -1,2 +1,5 @@
 # maechanneler.github.io
-This is my homepage. I'd like to show my profile and pictures I took in some places.
+GitHubの練習もかねて、GitHub上にホームページを作ることにしました。主には、CSSとJavaScriptの練習のため。
+
+## サイトマップ
+工事中
