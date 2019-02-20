@@ -57,7 +57,7 @@
 }
 
 .heading02 {
-  text-align: center;            /* 文字を中央揃えに */
+  text-align: left;              /* 文字を左揃えに */
   font-size: 16px;               /* 文字サイズを16pxに */
   font-weight: bold;             /* 文字を太字に */
   color: #000;                   /* 文字色を黒に */
