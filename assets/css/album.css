@@ -1,0 +1,23 @@
+@charset "UTF-8";
+body {
+  background: #222;
+}
+#screen {
+  position: relative;
+  float: left;
+}
+#screen img {
+  position: absolute;
+}
+#thumbnail {
+  float: left;
+}
+#thumbnail li {
+  list-style-type: none;
+}
+#thumbnail img {
+  border: #333 4px solid;
+}
+#thumbnail .current {
+  border: #FFF 4px solid;
+}
