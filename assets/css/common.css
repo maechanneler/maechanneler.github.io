@@ -1,133 +1,214 @@
 @charset "UTF-8";
-.header {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 40%;
-  background: url(../img/top/hero_top.jpg) no-repeat center center/cover;
+
+/* Base Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
 }
 
-@media print, screen and (min-width: 768px) {
-   .header {
-     height: 400px;
-     padding-bottom: 0;
-   }
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.catch-copy, .page-title {
-  text-align: center;
-  width: 100%;
-  color: #fff;
-  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
-  font-size: 6vw;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+/* Section Styles */
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
+    position: relative;
+    padding-bottom: 20px;
 }
 
-.catch-copy span, .page-title span {
-  border-bottom: 3px solid #fff;
-  padding-bottom: 4px;
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #333, #999);
 }
 
-@media print, screen and (min-width: 768px) {
-  .catch-copy, .page-title {
-    font-size: 50px;
-  }
-}
-
-.heading02 {
-  text-align: left;
-  font-size: 16px;
-  font-weight: bold;
-  color: #000;
-  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
-  margin-bottom: 20px;
-}
-
-@media print, screen and (min-width: 768px) {
-  .heading02 {
-    font-size: 20px;
-    margin-bottom: 40px;
-  }
-}
-
-.heading02 span {
-  border-bottom: 3px solid #000;
-  padding-bottom: 4px;
-}
-
-.footer {
-  padding: 30px 10px;
-  background: #f5f5f5;
-  margin-top: 60px;
-}
-
-.copy {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* Navigation Styles */
+/* Navigation */
 .globalnav {
-  background: rgba(255, 255, 255, 0.95);
-  padding: 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
 .globalnav-list {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
 }
 
 .globalnav li {
-  flex: 1;
-  text-align: center;
-  border-left: 1px solid #eee;
-}
-
-.globalnav li:last-child {
-  border-right: 1px solid #eee;
+    flex: 1;
+    text-align: center;
 }
 
 .globalnav li a {
-  display: block;
-  padding: 15px 10px;
-  text-decoration: none;
-  color: #333;
-  font-size: 0.9rem;
-  transition: all 0.3s ease;
+    display: block;
+    padding: 20px 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.globalnav li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
 }
 
 .globalnav li a:hover {
-  background: #000;
-  color: #fff;
+    color: #000;
 }
 
+.globalnav li a:hover::after {
+    width: 100%;
+}
+
+/* Header */
+.header {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Page-specific header backgrounds */
+body:not([class]) .header {
+    background-image: url(../img/top/hero_top.jpg);
+}
+
+.profile .header {
+    background-image: url(../img/common/001.jpg);
+}
+
+.blog .header {
+    background-image: url(../img/common/002.jpg);
+}
+
+.gallery .header {
+    background-image: url(../img/top/hero_top.jpg);
+}
+
+.apps .header {
+    background-image: url(../img/common/001.jpg);
+}
+
+.contact .header {
+    background-image: url(../img/common/002.jpg);
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.page-title {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
+}
+
+.page-title span {
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #fff;
+}
+
+/* Footer */
+.footer {
+    background: #f8f8f8;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.copy {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .globalnav {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
+    .globalnav {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 
-  .globalnav-list {
-    width: max-content;
-    padding: 0 10px;
-  }
+    .globalnav-list {
+        width: max-content;
+        padding: 0 10px;
+    }
 
-  .globalnav li a {
-    padding: 12px 15px;
-    white-space: nowrap;
-  }
+    .globalnav li a {
+        padding: 15px 20px;
+        white-space: nowrap;
+    }
+
+    .header {
+        height: 40vh;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
 }
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+.mb-5 { margin-bottom: 3rem; }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mt-5 { margin-top: 3rem; }

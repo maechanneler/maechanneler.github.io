@@ -1,69 +1,120 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="maechanneler's Labへようこそ。数値流体力学からプログラミングまで、技術的な探求の記録を共有しています。">
-    <title>maechanneler's Lab - Welcome</title>
-
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/common.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/top.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  </head>
-  <body>
-    <header class="header">
-        <div class="catch-copy">
-            <span>
-                Welcome to maechanneler's Lab
-            </span>
-        </div>
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">Your Name</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <nav class="globalnav">
-        <ul class="globalnav-list">
-            <li class="heading02"><a href="index.html">トップ</a></li>
-            <li class="heading02"><a href="profile/index.html">プロフィール</a></li>
-            <li class="heading02"><a href="diary/index.html">日記</a></li>
-            <li class="heading02"><a href="album/index.html">アルバム</a></li>
-            <li class="heading02"><a href="apps/index.html">アプリ</a></li>
-            <li class="heading02"><a href="contact/index.html">コンタクト</a></li>
-        </ul>
-    </nav>
+
     <main>
-        <div class="wrapper">
-            <section class="about-section">
-                <h2 class="section-title">About Me</h2>
-                <div class="lead">
-                    学生時代は数値流体力学を専攻し、現在は趣味でプログラミングに取り組んでいます。
-                    このサイトでは、技術的な備忘録や開発したアプリケーションの紹介を通じて、
-                    私の探求の軌跡を共有していきます。
+        <!-- Hero Section -->
+        <section id="about" class="hero">
+            <div class="hero-content">
+                <img src="https://via.placeholder.com/150" alt="Profile" class="profile-img">
+                <h1>Your Name</h1>
+                <p>ソフトウェアエンジニア / Web開発者</p>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                    <a href="mailto:your.email@example.com">Email</a>
                 </div>
-            </section>
-            
-            <section class="featured-section">
-                <h2 class="section-title">Featured Content</h2>
-                <div class="featured-grid">
-                    <a href="apps/index.html" class="featured-item">
-                        <i class="fas fa-code"></i>
-                        <h3>Applications</h3>
-                        <p>開発したアプリケーション</p>
-                    </a>
-                    <a href="diary/index.html" class="featured-item">
-                        <i class="fas fa-book"></i>
-                        <h3>Technical Notes</h3>
-                        <p>技術的な備忘録</p>
-                    </a>
-                    <a href="album/index.html" class="featured-item">
-                        <i class="fas fa-images"></i>
-                        <h3>Photo Gallery</h3>
-                        <p>写真ギャラリー</p>
-                    </a>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>プロジェクト1</h3>
+                    <p>プロジェクトの説明文がここに入ります。</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <a href="#" class="project-link">詳細を見る</a>
                 </div>
-            </section>
-        </div>
+                <div class="project-card">
+                    <h3>プロジェクト2</h3>
+                    <p>プロジェクトの説明文がここに入ります。</p>
+                    <div class="tech-stack">
+                        <span>Vue.js</span>
+                        <span>Python</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <a href="#" class="project-link">詳細を見る</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-item">
+                        <span>HTML/CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>React</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Backend</h3>
+                    <div class="skill-item">
+                        <span>Node.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>SQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer">
-        <p class="copy"><small>&copy; 2024 maechanneler's Lab</small></p>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
