@@ -2,17 +2,19 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>maechanneler's Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="maechannelerのプロフィールページです。経歴や専門分野について紹介しています。">
+    <title>プロフィール - maechanneler's Lab</title>
+
     <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/common.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/top.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
     <header class="header">
-        <div class="catch-copy">
-            <span>
-                Welcome to maechanneler's Lab
-            </span>
+        <div class="page-title">
+            <span>Profile</span>
         </div>
     </header>
     <nav class="globalnav">
@@ -27,15 +29,52 @@
     </nav>
     <main>
         <div class="wrapper">
-            <div class="lead">
-                <h2 class="heading02">プロフィール</h2>
-                名古屋生まれ、名古屋育ち、大学は東京、就職も東京。１年ほどドイツのシュトゥットガルトで宇宙の研究。
-                学生時代は数値流体力学を専攻し、今は趣味でプログラミングをやっています。<br>
-            </div>
+            <section class="profile-section">
+                <h2 class="section-title">About Me</h2>
+                <div class="profile-content">
+                    <div class="profile-text">
+                        <p>名古屋生まれ、名古屋育ち。大学進学を機に上京し、その後ドイツのシュトゥットガルトで宇宙研究に携わる機会を得ました。</p>
+                        <p>学生時代は数値流体力学を専攻し、複雑な流体現象のシミュレーションに取り組みました。現在は、その経験を活かしながら、プログラミングを通じて新しい可能性を探求しています。</p>
+                    </div>
+                    <div class="timeline">
+                        <h3 class="timeline-title">経歴</h3>
+                        <div class="timeline-item">
+                            <div class="timeline-date">
+                                <i class="fas fa-map-marker-alt"></i>
+                                名古屋
+                            </div>
+                            <div class="timeline-content">
+                                <h4>出身地</h4>
+                                <p>名古屋で生まれ育ち、地元の高校まで過ごす</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">
+                                <i class="fas fa-university"></i>
+                                東京
+                            </div>
+                            <div class="timeline-content">
+                                <h4>大学生活</h4>
+                                <p>数値流体力学を専攻し、流体シミュレーションを研究</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">
+                                <i class="fas fa-rocket"></i>
+                                シュトゥットガルト
+                            </div>
+                            <div class="timeline-content">
+                                <h4>研究活動</h4>
+                                <p>1年間、宇宙関連の研究プロジェクトに参加</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     <footer class="footer">
-        <p class="copy"><small>&copy; maechanneler's Lab</small></p>
+        <p class="copy"><small>&copy; 2024 maechanneler's Lab</small></p>
     </footer>
   </body>
 </html>

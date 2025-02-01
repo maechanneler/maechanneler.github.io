@@ -1,23 +1,106 @@
-@charset "UTF-8";
-body {
-  background: #222;
+@charset "utf-8";
+
+.gallery-section {
+    margin: 40px 0;
 }
-#screen {
-  position: relative;
-  float: left;
+
+.gallery-description {
+    text-align: center;
+    color: #666;
+    margin: 20px 0 40px;
+    line-height: 1.6;
 }
-#screen img {
-  position: absolute;
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
 }
-#thumbnail {
-  float: left;
+
+.gallery-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
-#thumbnail li {
-  list-style-type: none;
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
-#thumbnail img {
-  border: #333 4px solid;
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 }
-#thumbnail .current {
-  border: #FFF 4px solid;
+
+.gallery-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+    opacity: 1;
+}
+
+.gallery-item-overlay i {
+    color: #fff;
+    font-size: 2rem;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-item-overlay i {
+    transform: scale(1);
+}
+
+/* LightGallery Customization */
+.lg-backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lg-toolbar {
+    background-color: transparent;
+}
+
+.lg-sub-html {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.lg-sub-html h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .gallery-item img {
+        height: 150px;
+    }
+
+    .gallery-description {
+        margin: 15px 0 30px;
+        font-size: 0.9rem;
+    }
 }

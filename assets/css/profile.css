@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+.profile-section {
+    margin: 40px 0;
+}
+
+.profile-content {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.profile-text {
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.profile-text p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.profile-text p:last-child {
+    margin-bottom: 0;
+}
+
+.timeline {
+    position: relative;
+    padding: 30px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #eee 0%, #000 100%);
+    top: 0;
+}
+
+.timeline-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
+    position: relative;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.timeline-date {
+    flex: 1;
+    text-align: right;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    font-weight: bold;
+    position: relative;
+    max-width: 200px;
+}
+
+.timeline-date i {
+    margin-right: 8px;
+    color: #000;
+}
+
+.timeline-content {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position: relative;
+    max-width: 400px;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.timeline-content h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+.timeline-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .profile-content {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        margin-left: 30px;
+        gap: 15px;
+    }
+
+    .timeline-date {
+        text-align: left;
+        padding: 10px;
+        max-width: none;
+    }
+
+    .timeline-content {
+        max-width: none;
+    }
+
+    .timeline-content::before {
+        left: -38px;
+    }
+}

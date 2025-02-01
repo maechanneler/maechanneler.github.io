@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+.apps-section {
+    margin: 40px 0;
+}
+
+.apps-description {
+    text-align: center;
+    color: #666;
+    margin: 20px 0 40px;
+    line-height: 1.6;
+}
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.app-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.app-icon {
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f8f8 0%, #fff 100%);
+    border-bottom: 1px solid #eee;
+}
+
+.app-icon i {
+    font-size: 3rem;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.app-card:hover .app-icon i {
+    transform: scale(1.1);
+}
+
+.app-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.app-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: bold;
+    font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
+}
+
+.app-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.app-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tech-tag {
+    background: #f0f0f0;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.tech-tag:hover {
+    background: #e0e0e0;
+}
+
+.app-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #eee;
+    background: #f8f8f8;
+}
+
+.app-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.app-link:hover {
+    color: #000;
+}
+
+.app-link i {
+    transition: transform 0.3s ease;
+}
+
+.app-link:hover i {
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .apps-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px 0;
+    }
+
+    .app-icon {
+        padding: 20px;
+    }
+
+    .app-icon i {
+        font-size: 2.5rem;
+    }
+
+    .app-content {
+        padding: 15px;
+    }
+
+    .app-title {
+        font-size: 1.2rem;
+    }
+
+    .app-description {
+        font-size: 0.9rem;
+    }
+
+    .app-footer {
+        padding: 12px 15px;
+    }
+}

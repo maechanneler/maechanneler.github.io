@@ -2,17 +2,19 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>maechanneler's Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="maechannelerが開発したアプリケーションを紹介しています。TensorFlow、Keras、D3.js、jQueryなどを使用した様々なプロジェクトをご覧いただけます。">
+    <title>アプリケーション - maechanneler's Lab</title>
+
     <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/common.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/top.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/apps.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
     <header class="header">
-        <div class="catch-copy">
-            <span>
-                Welcome to maechanneler's Lab
-            </span>
+        <div class="page-title">
+            <span>Applications</span>
         </div>
     </header>
     <nav class="globalnav">
@@ -27,19 +29,90 @@
     </nav>
     <main>
         <div class="wrapper">
-            <div class="lead">
-                <h2 class="heading02">アプリ</h2>
-                TensorFlowやKeras、D3.jsやjQuery等に興味があり色々なアプリを作っています。
-                <ul>
-                    <li>図面説明ツール</li>
-                    <li>ポンチ絵ジェネレータ</li>
-                    <li>アルファ碁９路</li>
-                </ul>
-            </div>
+            <section class="apps-section">
+                <h2 class="section-title">My Projects</h2>
+                <p class="apps-description">
+                    TensorFlow、Keras、D3.js、jQueryなどの最新技術を活用して、
+                    様々なアプリケーションを開発しています。
+                </p>
+                
+                <div class="apps-grid">
+                    <article class="app-card">
+                        <div class="app-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">図面説明ツール</h3>
+                            <p class="app-description">
+                                技術文書や設計図面の説明を効率的に作成できるツール。
+                                直感的なインターフェースで、図面上に注釈や説明を簡単に追加できます。
+                            </p>
+                            <div class="app-tech">
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">jQuery</span>
+                            </div>
+                        </div>
+                        <div class="app-footer">
+                            <a href="#" class="app-link">
+                                詳細を見る
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="app-card">
+                        <div class="app-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">ポンチ絵ジェネレータ</h3>
+                            <p class="app-description">
+                                アイデアやコンセプトを素早くビジュアル化できるツール。
+                                プリセットの図形やテンプレートを組み合わせて、簡単にポンチ絵を作成できます。
+                            </p>
+                            <div class="app-tech">
+                                <span class="tech-tag">Canvas</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="app-footer">
+                            <a href="#" class="app-link">
+                                詳細を見る
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="app-card">
+                        <div class="app-icon">
+                            <i class="fas fa-chess-board"></i>
+                        </div>
+                        <div class="app-content">
+                            <h3 class="app-title">アルファ碁9路</h3>
+                            <p class="app-description">
+                                TensorFlowとKerasを使用した囲碁AI。
+                                9路盤で対戦が可能で、深層学習を用いて手筋を学習し、
+                                プレイヤーに適切な難易度で対戦を提供します。
+                            </p>
+                            <div class="app-tech">
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Keras</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                        </div>
+                        <div class="app-footer">
+                            <a href="#" class="app-link">
+                                詳細を見る
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </div>
     </main>
     <footer class="footer">
-        <p class="copy"><small>&copy; maechanneler's Lab</small></p>
+        <p class="copy"><small>&copy; 2024 maechanneler's Lab</small></p>
     </footer>
   </body>
 </html>

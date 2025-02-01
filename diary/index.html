@@ -2,17 +2,19 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>maechanneler's Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="maechannelerの技術ブログです。日々の発見や学びを共有しています。">
+    <title>技術ブログ - maechanneler's Lab</title>
+
     <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/common.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/top.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/diary.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
     <header class="header">
-        <div class="catch-copy">
-            <span>
-                Welcome to maechanneler's Lab
-            </span>
+        <div class="page-title">
+            <span>Technical Notes</span>
         </div>
     </header>
     <nav class="globalnav">
@@ -27,15 +29,68 @@
     </nav>
     <main>
         <div class="wrapper">
-            <div class="lead">
-                <h2 class="heading02">日記</h2>
-                ２月某日</br>
-                今日はめちゃ寒かったけど、１歳の息子を葛西臨海公園に連れて行きました。
-            </div>
+            <section class="blog-section">
+                <h2 class="section-title">Recent Posts</h2>
+                
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-card-header">
+                            <div class="blog-date">
+                                <i class="far fa-calendar-alt"></i>
+                                2024年2月
+                            </div>
+                            <div class="blog-category">
+                                <i class="fas fa-tag"></i>
+                                日常
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">葛西臨海公園への家族旅行</h3>
+                            <p class="blog-excerpt">
+                                寒い冬の日でしたが、1歳の息子と一緒に葛西臨海公園へ出かけました。
+                                自然に触れ合いながら、家族で素敵な思い出を作ることができました。
+                            </p>
+                        </div>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">
+                                続きを読む
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-card-header">
+                            <div class="blog-date">
+                                <i class="far fa-calendar-alt"></i>
+                                2024年2月
+                            </div>
+                            <div class="blog-category">
+                                <i class="fas fa-tag"></i>
+                                技術
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <h3 class="blog-title">ウェブサイトのリニューアル</h3>
+                            <p class="blog-excerpt">
+                                個人サイトをモダンなデザインにリニューアルしました。
+                                レスポンシブ対応やアニメーション効果の追加など、
+                                ユーザー体験の向上を目指して改善を行いました。
+                            </p>
+                        </div>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more">
+                                続きを読む
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </div>
     </main>
     <footer class="footer">
-        <p class="copy"><small>&copy; maechanneler's Lab</small></p>
+        <p class="copy"><small>&copy; 2024 maechanneler's Lab</small></p>
     </footer>
   </body>
 </html>
